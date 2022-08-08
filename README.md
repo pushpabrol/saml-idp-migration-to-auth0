@@ -3,13 +3,13 @@ This repo contains instructions on how to migrate SAML IDP from an platform like
 
 
 ## Problem statement
-A customer that is using PING has setup 100s of SAML IDPs/Enterprise Connections. They want to migrate to Auth0 but do not want to cause any changes for the partners with whom they exchanged metadata to establish the IDP trust. The manual work involved with this setup is very high therefore a migration which allows this to happen with low touch is desirable
+A customer that is using PING has setup 100s of SAML IDPs/Enterprise Connections. They want to migrate to Auth0 but do not want to cause any changes for the partners/customers with whom they exchanged metadata to establish the IDP trust. The manual work involved with this setup is very high therefore a migration which allows this to happen with low touch is desirable
 
 
 ## How do we solve this?
   
     
-  - The solution involves creating a proxy that runs on the ACS url for the Service Provider ( Source) and reposts the SAML response to the destination Service Provider
+  - The solution involves creating a proxy that runs on the ACS url for the Service Provider (source) and reposts the SAML response to the destination Service Provider
   
   <img width="738" alt="image" src="https://user-images.githubusercontent.com/7750618/182960288-2f84d4f6-4175-4a5e-b88f-001d956e791d.png">
   
@@ -22,12 +22,12 @@ A customer that is using PING has setup 100s of SAML IDPs/Enterprise Connections
 
   
   
-  - Since this solution is in the middle of a SAML Authentication Response there are a lot of pre rquisites for this to work.
-    - Pre requisites
+  - Since this solution is in the middle of a SAML Authentication Response there are several key prerequisites for this to work.
+    - Prerequisites:
       1. Each SAML IDP has a unique Entity ID
       2. Each SAML IDP has a unique ACS Url for the Source SP
-      3. Each SAML IDP is not requiring a Signed Authenticaiton Request from the SP ( source) for SP initiated flows
-      4. Each SAML IDP does not encrypt the SAML response uisng the public key of the ST ( source)
+      3. Each SAML IDP is not requiring a Signed Authentication Request from the SP (source) for SP initiated flows
+      4. Each SAML IDP does not encrypt the SAML response uisng the public key of the SP (source)
       
       
   ## Source projects that contain the required code for this solution
