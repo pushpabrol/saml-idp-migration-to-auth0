@@ -18,7 +18,8 @@ A customer that is using PING has setup 100s of SAML IDPs/Enterprise Connections
     <img width="1037" alt="image" src="https://user-images.githubusercontent.com/7750618/182974049-ea7ff3db-bcc9-4bdc-b127-88d037dad5d2.png">
 
   - Flow after routing is enabled via the proxy
-    <img width="938" alt="image" src="https://user-images.githubusercontent.com/7750618/182973929-b3ace148-447d-4843-b57e-82d90e0c9d8a.png">
+  ![image](https://user-images.githubusercontent.com/7750618/183534744-6fd08734-e65d-416c-9db8-c4d2a3db2247.png)
+
 
   
   
