@@ -3,7 +3,7 @@ This repo contains instructions on how to migrate SAML IDP from an platform like
 
 
 ## Problem statement
-A customer that is using PING has setup 100s of SAML IDPs/Enterprise Connections. They want to migrate to Auth0 but do not want to cause any changes for the partners/customers with whom they exchanged metadata to establish the IDP trust. The manual work involved with this setup is very high therefore a migration which allows this to happen with low touch is desirable
+A customer that is using a third party IDP has setup 100s of SAML IDPs/Enterprise Connections. They want to migrate to Okta CIC but do not want to cause any changes for the partners/customers with whom they exchanged metadata to establish the IDP trust. The manual work involved with this setup is very high therefore a migration which allows this to happen with low touch is desirable
 
 
 ## How do we solve this?
